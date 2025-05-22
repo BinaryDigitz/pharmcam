@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import './my_css.css'
 import { Footer, Navbar } from './components/exportComp'
 
 const geistSans = Geist({
@@ -21,11 +22,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen overflow-hidden gradient-background`}
       >
         <Navbar />
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );

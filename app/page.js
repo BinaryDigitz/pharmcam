@@ -1,10 +1,12 @@
 import React from 'react'
+import { Hero } from './components/exportComp'
+
 
 function Home() {
   return (
-    <main>
-      home
-    </main>
+    <section className='h-full'>
+     <Hero />
+    </section>
   )
 }
 
