@@ -6,9 +6,9 @@ import Image from "next/image";
 function Searchbar() {
   const [searchInput, setSearchInput] = useState("");
   return (
-    <div className="grid place-items-center ">
-      <div className="flex border border-green-900/40 rounded w-sm justify-between gap-4 shadow-green-400/20 shadow-lg">
-        <label htmlFor="search" className=" p-2 rounded bg-gray-300 ">
+    <div className="grid place-items-center w-full borde">
+      <div className="flex border border-green-900/40 rounded  justify-between gap-4 w-full md:w-md  ">
+        <label htmlFor="search" className=" p-2 rounded  ">
           <Image
             src={search}
             width={30}

@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`  h-screen overflow-hidden gradient-background outfit`}
+        className={`  h-screen overflow-hidden mb-4 gradient-background outfit`}
       >
         <Navbar />
         {children}
