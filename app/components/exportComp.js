@@ -10,6 +10,7 @@ export { default as Theme } from './Theme'
 export { default as User } from './User'
 export { default as Hambuger } from './Hambuger'
 export { default as Hero } from './Hero'
+export { default as Searchbar } from './Searchbar'
 
 
 // pages

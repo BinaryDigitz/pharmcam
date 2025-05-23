@@ -1,31 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Outfit:wght@100..900&family=Prata&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');@import "tailwindcss";
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+*{
+  font-family: 'Outfit', sans-serif, UI;
+}
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
+@theme {
+  --color-cream-white:#20b2aa;
+  --color-chalk-white:#e0dbd1;
+  --color-accent:#8ca19e;
+  --color-accent-tone:#20b0aa;
+  --color-light-tone:#B3EBC9;
+  --color-black:#2A3C28;
+  
+  /* Dark background */
+  --color-light-prim:#f0f0f0;
+  --dark-black:#00191d;
+  --color-light-sec:#e0dbd1;
+  --color-black:#001316;
+  --color-light:#e0dbd1;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Light background */
+  --color-dark-prim:#424242
+  --color-dark-sec: #969696;
 }
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.italics{
+    font-family: 'Courgette', 'Outfit', sans-serif, UI;
   }
-} */
+.outfit{
+    font-family:  'Outfit', sans-serif, UI;
+  }
+  .mano{
+    font-family:'Space Mono', 'Outfit',  sans-serif, UI;
+  }
+  
+  .light-bg{
+      background:linear-gradient( 180deg, var(--white-color1), var(--white-color2));
+  }
+  .dark-bg{
+      background-image:linear-gradient(10deg,  var(--primary-color1), var(--primary-color3)) ; 
+  }
+  .bodoni{
+    font-family:'Space Mano',  sans-serif, UI;
+  }
+
 
 body {
-  background: var(--background);
+  /* background: var(--background); */
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+ font-family: 'Outfit', sans-serif, UI;
 }
 .gradient-background {
-  background: linear-gradient(218deg,#c5f5d9,#c7f3da,#cff3df,#64efa2,#0fa552);
+  background: linear-gradient(218deg,#E2E2E2,#C6C6C6);
   background-size: 300% 300%;
   animation: gradient-animation 40s ease infinite;
 }

@@ -11,7 +11,7 @@ function Navbar() {
         </Link>
         <div className="flex items-center gap-4">
           <Language />
-          <Theme />
+          {/* <Theme /> */}
           <Hambuger />
           <User />
         </div>
